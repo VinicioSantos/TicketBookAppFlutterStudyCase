@@ -97,6 +97,21 @@ class TicketView extends StatelessWidget {
               ],
             )
           ]),
+        ),
+        Container(
+          color: Styles.orangeColor,
+          margin: const EdgeInsets.only(left: 16),
+          child: Row(children: [
+            SizedBox(
+                height: 20,
+                width: 10,
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(10),
+                  )),
+                ))
+          ]),
         )
       ]),
     );

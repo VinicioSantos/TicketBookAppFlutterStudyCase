@@ -110,7 +110,8 @@ class TicketView extends StatelessWidget {
                       borderRadius: BorderRadius.only(
                     topRight: Radius.circular(10),
                   )),
-                ))
+                )),
+            Container()
           ]),
         )
       ]),

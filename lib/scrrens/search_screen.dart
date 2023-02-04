@@ -18,6 +18,7 @@ class SearchScreen extends StatelessWidget {
           Text("What are\nyou looking for?",
               style: Styles.headLineStyle.copyWith(fontSize: 35),
               textAlign: TextAlign.start),
+          Container()
         ],
       ),
     );

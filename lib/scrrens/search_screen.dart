@@ -18,7 +18,17 @@ class SearchScreen extends StatelessWidget {
           Text("What are\nyou looking for?",
               style: Styles.headLineStyle.copyWith(fontSize: 35),
               textAlign: TextAlign.start),
-          Container()
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: AppLayout.getWidth(20)),
+            child: TextField(
+              decoration: InputDecoration(
+                  hintText: "Search",
+                  hintStyle: Styles.headLineStyle3,
+                  prefixIcon: Icon(Icons.search),
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10))),
+            ),
+          )
         ],
       ),
     );

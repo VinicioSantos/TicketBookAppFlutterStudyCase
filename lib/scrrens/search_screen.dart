@@ -3,6 +3,7 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_application_1/utils/app_layout.dart';
 import 'package:flutter_application_1/utils/app_styles.dart';
+import 'package:flutter_application_1/widgets/icon_text_widget.dart';
 import 'package:gap/gap.dart';
 
 class SearchScreen extends StatelessWidget {
@@ -61,6 +62,11 @@ class SearchScreen extends StatelessWidget {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(AppLayout.getHeight(50)),
                   color: const Color(0xFFF4F6FD))),
+          Gap(AppLayout.getHeight(25)),
+          const AppIconText(
+              icon: Icons.flight_takeoff_rounded, text: "Departure"),
+          Gap(AppLayout.getHeight(15)),
+          const AppIconText(icon: Icons.flight_land_rounded, text: "Arrivel"),
         ],
       ),
     );

@@ -67,6 +67,7 @@ class SearchScreen extends StatelessWidget {
               icon: Icons.flight_takeoff_rounded, text: "Departure"),
           Gap(AppLayout.getHeight(15)),
           const AppIconText(icon: Icons.flight_land_rounded, text: "Arrivel"),
+          Gap(AppLayout.getHeight(15)),
         ],
       ),
     );
